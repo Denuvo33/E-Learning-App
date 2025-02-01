@@ -2,7 +2,7 @@
 
 Ini adalah FullStack Aplikasi E learning dengan Menggunakan **LARAVEL** sebagai Backend dan **Flutter** sebagai FrontEnd.
 
-# Instalasi Laravel
+# Instalasi Laravel Secara Lokal
 
 > [!IMPORTANT]
 > - Pastikan menggunakan PHP versi 8.x keatas
