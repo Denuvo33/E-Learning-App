@@ -1,8 +1,8 @@
-## E Learning App
+# E Learning App
 
 Ini adalah FullStack Aplikasi E learning dengan Menggunakan **LARAVEL** sebagai Backend dan **Flutter** sebagai FrontEnd.
 
-## Instalasi Laravel
+# Instalasi Laravel
 
 > [!IMPORTANT]
 > - Pastikan menggunakan PHP versi 8.x keatas
@@ -41,7 +41,24 @@ atau jika ingin lebih cepat anda dapat melakukan Seeder dengan command ini
 ```
 php artisan db:seed --class=UserSeeder
 ```
-## Flutter
+Ketika anda membuat user dengan seeder anda telah membuat 2 akun dengan masing-masing role
+#### *Admin
+email: admin@example.com
+
+password: password
+
+role: admin
+
+#### *Siswa
+email: siswa1@example.com
+
+password: password
+
+role: siswa
+
+> gunakan akun tersebut untuk login,dan ingat admin user hanya dapat dibuat langsung dri database dengan mengatur role menjadi ```admin``` anda tidak dapat meregist admin dari Route atau Aplikasi, hanya mendukung registrasi untuk ```siswa```
+
+# Flutter
 
 > [!IMPORTANT]
 > - Pastikan menggunakan Flutter 3.x keatas
