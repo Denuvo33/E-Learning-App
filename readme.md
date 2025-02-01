@@ -61,7 +61,7 @@ role: siswa
 # Flutter
 
 > [!IMPORTANT]
-> - Pastikan menggunakan Flutter 3.x keatas
+> - Pastikan menggunakan Flutter v3.x keatas
 
 Ketika ingin menjalakan Flutter pastikan anda sudah berada di directory ```frontend/```
 
@@ -74,6 +74,16 @@ flutter run
 2.jika menjalankan aplikasi dari emulator pastikan url seperti ini ```10.0.2.2:8000``` atau mungkin dapat berbeda. jika menjalankan dari physical device pastikan untuk mendapat ip dri jaringan anda dengan cara buka **CMD** lalu ketik 
 ```ipconfig``` dan copy IPv4 Address. . . . . . . . . . . 
 dan ganti variable ```_baseUrl``` di ```frontend/lib/service/api_service.dart/``` menjadi ip anda dengan contoh ip addres milik anda adalah 192.168.1.100 make value di ```_baseUrl``` adalah ```http://192.168.1.100:8000/api```
+
+3.Jika ingin membuild aplikasi berformat .apk lakukan command ini
+```
+flutter build apk
+```
+dan jika ingin membuild aplikasi berformat .aab lakukan command ini
+```
+flutter build appbundle
+```
+atau baca ini untuk lebih lanjut https://docs.flutter.dev/deployment/android
 
 ## Route 
     Harus menyertakan token dalam Authorization header.
