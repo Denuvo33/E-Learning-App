@@ -9,7 +9,8 @@ Ini adalah FullStack Aplikasi E learning dengan Menggunakan **LARAVEL** sebagai 
 > - Composer
 > - MySql atau Database Lainnya
 
-Ketika ingin melakukan instalasi laravel pastikan anda sudah berada di directory ```backend/```
+Ketika ingin melakukan instalasi laravel pastikan anda sudah berada di directory ```backend/``` dengan cara
+```cd backend```
 
 1.Clone Repository
 ```
@@ -19,7 +20,11 @@ git clone https://github.com/Denuvo33/E-Learning-App.git
 ```
 composer install
 ```
-3.Salin dan ganti nama ```backend/.env.example``` menjadi ```.env``` dan sesuaikan konfigurasi dengan ```mysql``` atau db lainnya.
+3.Salin dan ganti nama ```backend/.env.example``` menjadi ```.env``` dan sesuaikan konfigurasi dengan ```mysql``` atau db lainnya.atau ketik
+```
+cp .env.example .env
+```
+pastikan sudah berada di directory ```backend```
 
 4.jalankan migrasi untuk membuat tabel-tabel database, pastikan database ```e_learning``` sudah dibuat di MySQL/
 ```
@@ -63,7 +68,8 @@ role: siswa
 > [!IMPORTANT]
 > - Pastikan menggunakan Flutter v3.x keatas
 
-Ketika ingin menjalakan Flutter pastikan anda sudah berada di directory ```frontend/```
+Ketika ingin menjalakan Flutter pastikan anda sudah berada di directory ```frontend/``` dengan cara
+```cd frontend```
 
 1.Jalankan command ini untuk membersihkan dan menjalankan Flutter
 ```
@@ -86,7 +92,15 @@ flutter build appbundle
 atau baca ini untuk lebih lanjut https://docs.flutter.dev/deployment/android
 
 ## Route 
-    Harus menyertakan token dalam Authorization header.
+
+    POST /login
+        Untuk user login
+
+    POST /register
+        Untuk melakukan registrasi User
+
+
+Harus menyertakan token dalam Authorization header.
 
     POST /logout
         Mengeluarkan pengguna dari sistem dengan menghapus token.
