@@ -5,7 +5,7 @@ Ini adalah FullStack Aplikasi E learning dengan Menggunakan **LARAVEL** sebagai 
 # Instalasi Laravel Secara Lokal
 
 > [!IMPORTANT]
-> - Pastikan menggunakan PHP versi 8.x keatas
+> - Pastikan menggunakan PHP versi 8.2 keatas
 > - Composer
 > - MySql atau Database Lainnya
 
@@ -66,7 +66,7 @@ role: siswa
 # Flutter
 
 > [!IMPORTANT]
-> - Pastikan menggunakan Flutter v3.x keatas
+> - Pastikan menggunakan Flutter v3.2 keatas
 
 Ketika ingin menjalakan Flutter pastikan anda sudah berada di directory ```frontend/``` dengan cara
 ```cd frontend```
