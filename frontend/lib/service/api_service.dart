@@ -139,7 +139,6 @@ class ApiService {
       dio.FormData formData = dio.FormData.fromMap({
         'judul': judul,
         'deskripsi': deskripsi,
-        'file': null,
         if (file != null)
           'file': await dio.MultipartFile.fromFile(file.path,
               filename: file.path.split('/').last),

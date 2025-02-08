@@ -40,7 +40,7 @@ class HomeController extends GetxController {
         content: const CircularProgressIndicator(),
       );
       await api.uploadMaterial(context, judul, deskripsi, selectedFile.value,
-          isEdit, materials[index].id);
+          isEdit, isEdit ? materials[index].id : 0);
       Get.back();
       getMaterials();
     } catch (e) {
